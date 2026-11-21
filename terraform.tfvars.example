@@ -1,0 +1,26 @@
+# ==============================================================================
+# Example Terraform Variables: Enterprise Bedrock GenAI & MCP Platform
+# ==============================================================================
+
+aws_region   = "us-east-1"
+environment  = "prod"
+project_name = "enterprise-genai"
+
+vpc_cidr                  = "10.100.0.0/16"
+availability_zones        = ["us-east-1a", "us-east-1b"]
+public_subnet_cidrs       = ["10.100.1.0/24", "10.100.2.0/24"]
+private_app_subnet_cidrs  = ["10.100.10.0/24", "10.100.11.0/24"]
+private_data_subnet_cidrs = ["10.100.20.0/24", "10.100.21.0/24"]
+
+enable_nat_gateway = true
+single_nat_gateway = false
+
+app_service_cpu           = 1024
+app_service_memory        = 2048
+app_service_desired_count = 2
+
+mcp_service_cpu           = 1024
+mcp_service_memory        = 2048
+mcp_service_desired_count = 2
+
+log_retention_in_days = 365
