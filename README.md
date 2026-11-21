@@ -11,12 +11,16 @@ This architecture is hardened to strictly comply with:
 * **FDA 21 CFR Part 11** (Time-stamped audit trails, immutable WORM records retention)
 * **OWASP Top 10 for Large Language Model Applications**
 
+> **Detailed Architecture & Security Posture Specification:** See [`docs/SECURITY_SPECIFICATION.md`](docs/SECURITY_SPECIFICATION.md) for the formal 7-layer defense-in-depth security model and regulatory controls breakdown.
+
 ---
 
 ## 1. Directory Structure
 
 ```text
 terraform-aws-bedrock-enterprise-platform/
+├── docs/
+│   └── SECURITY_SPECIFICATION.md # Formal 7-Layer Zero-Trust & Regulatory Specification
 ├── versions.tf                   # Terraform CLI (>= 1.5.0), AWS (~> 5.50) & TLS providers, default compliance tags
 ├── variables.tf                  # Parameterized variables (VPC, CIDRs, Fargate sizing, 365-day audit log retention)
 ├── org_scp.tf                    # AWS Organizations SCPs (Region lock, service protection, KMS enforce, MFA delete lock)
