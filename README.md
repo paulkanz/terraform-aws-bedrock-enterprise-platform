@@ -1,6 +1,6 @@
 # Enterprise AWS Bedrock Generative AI & MCP Platform (Terraform)
 
-Production-grade Infrastructure as Code (Terraform) deploying a **Multi-Tenant Enterprise AWS Bedrock Generative AI & Model Context Protocol (MCP) Platform** hardened for regulated industries (Healthcare, FinTech, Life Sciences).
+Infrastructure as Code (Terraform) deploying a **Multi-Tenant Enterprise AWS Bedrock Generative AI & Model Context Protocol (MCP) Platform** hardened for regulated industries (Healthcare, FinTech, Life Sciences).
 
 This architecture is hardened to strictly comply with:
 * **NIST SP 800-53 Rev 5** (FedRAMP High/Moderate baseline controls)
